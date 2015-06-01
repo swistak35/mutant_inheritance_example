@@ -1,11 +1,11 @@
-module Foo
-  class Foo
-  end
+class Foo
+  attr_reader :arr
 
-  class Bar < Foo
-
-    def baz
-      "hello"
+  def set_something(new_arr)
+    if !@arr.nil?
+      @arr.clear
     end
+
+    @arr = new_arr
   end
 end

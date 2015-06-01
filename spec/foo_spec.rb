@@ -1,5 +1,8 @@
 describe Foo do
-  it "returns hello" do
-    expect(Foo::Bar.new.baz).to eq("hello")
+  it "works" do
+    f = Foo.new
+    f.set_something([1,2,3])
+
+    expect(f.arr).to eq([1,2,3])
   end
 end
